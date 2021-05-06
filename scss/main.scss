@@ -1,0 +1,234 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+
+
+
+// Styles
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/BG-transparent.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 70vmax;
+
+
+    @media screen and (max-width: 992px) {
+        background-image: url(../img/BG-transparent-2.png);
+    }
+
+    // &::before {
+    //     content: '';
+    //     background-image: url(../img/BG.png);
+    //     background-position: top right;
+    //     background-repeat: no-repeat;
+    //     background-size: 70vmax;
+    //     opacity: 0.78;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     bottom: 0;
+    //     right: 0;
+    // }
+}
+
+// Navigation / navbar
+.custom-nav {
+    .navbar-brand {
+        img {
+            width: 30px;
+            height: 30px;
+            margin-top: -5px;
+        }
+
+        span {
+            color: $primaryColor;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin-left: 0.4em;
+            @media screen and (max-width: 360px) {
+                color: $whiteText;
+            }
+        }
+
+    }
+
+    #navbarNav {
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $whiteText;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-left: 2.4em;
+                    @media screen and (max-width: 992px){
+                        color: $secondaryColor;
+                    }
+                    &:hover{
+                        color: darken($primaryColor, 30%);
+                        transition: .3s color ease;
+                    }
+                }
+                .sign-up-btn {
+                    @include tombol;
+                }
+            }
+
+        }
+    }
+    @media screen and (max-width: 992px){
+        margin-top: -1em;
+       
+    }
+}
+
+// Custom Section
+.custom-section {
+    margin-top: 10em;
+
+    h2 {
+        font-weight: 700;
+        font-size: 3rem;
+        color: $primaryColor;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: 2rem;
+        color: $secondaryColor;
+        white-space: nowrap;
+        line-height: 1;
+
+    }
+    p {
+        color: $textColor;
+        font-size: 1.5rem;
+        margin-top:2em;
+        
+    }
+    a {
+        margin-top: 2em;
+        @include tombol;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
+        &:hover{
+            color: $primaryColor;
+            border: 1px solid $primaryColor;
+            background-color: transparent;
+        }
+     }
+     @media screen and (max-width:992px) {
+         margin-top: 1em;
+         text-align: center;
+
+         h2, h3, p {
+             text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+         }
+         h3 {
+             color: lighten($textColor, 3%);
+         }
+         p {
+             margin-top: 1em;
+             color: darken($textColor, 10%);
+         }
+     }
+}
+
+//projects
+#projects {
+   margin-top: 27em;
+   h2{
+        font-weight: 700;
+        font-size: 3rem;
+        color: $primaryColor;
+        text-transform: uppercase;
+        white-space: nowrap;
+   }
+   @media screen and (max-width: 992px){
+        margin-top: 9em;
+   }
+}
+
+
+// contact section
+#contact{
+    background-color: $purpleBgColor;
+   
+    h2{
+        font-weight: 700;
+        font-size: 3rem;
+        color: $textColor;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    svg{
+        background-size: cover;
+    }
+    
+}
+
+#footer{
+    background-color: $secondaryColor;
+    padding-bottom:  5em;
+    font-size: 500;
+    @media screen and (max-width:992px) {
+        padding-bottom: 3em;
+    }
+
+}
+
+section{
+    padding-top: 5rem;
+}
+
+
+// contact selection
+// #contactUs {
+//     height: 1500px;
+//     margin-top: 100px;
+//     background-image: url(../img/Contact.png);
+//     background-size: 100vmax;
+//     background-repeat: no-repeat;
+
+//     h2{
+//         margin-top: 10em;
+//         color: $primaryColor;
+//         font-weight: 700;
+//         font-size: 4rem;
+//     }
+//     p {
+//         font-weight: 500;
+//         font-size: 2rem;
+//     }
+//     @media (max-width: 1400px) { 
+//         margin-top: 150px;
+//         h2 {
+//            margin-top: 7em;
+//            font-size: 3rem;
+
+//         }
+//         p{
+//             font-size: 1rem;
+//         }
+//         h2, p{
+//             text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+//         }
+//     }
+
+//     @media screen and (max-width: 992px) {
+//         background-image: url(../img/Contact-transparent.png);
+//         margin-top: 50px;
+//         h2 {
+//            margin-top: 3em;
+//            font-size: 3rem;
+//         }
+//         p{
+//             font-size: 1rem;
+//         }
+//         h2, p{
+//             text-shadow: 1px 1px 2px rgba($textColor, 0.3);
+//         }
+//     }
+// }
