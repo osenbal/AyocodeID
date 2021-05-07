@@ -8,3 +8,17 @@
     text-decoration: none;
 
 }
+@mixin text2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: $primaryColor;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+@mixin text3{
+    font-weight: 400;
+    font-size: 2rem;
+    color: $secondaryColor;
+    white-space: nowrap;
+    line-height: 1;
+}

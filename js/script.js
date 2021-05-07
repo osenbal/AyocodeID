@@ -1,20 +1,18 @@
 TweenMax.from(".about", 1, {
     opacity: 0,
-    y: -20,
+    y: -40,
     ease: Power3.easeInOut
 }, 0.08);
 
 TweenMax.staggerFrom("nav", 1, {
     opacity: 0,
-    x: -20,
+    x: -40,
     ease: Power3.easeInOut
 }, 0.08);
 
 
 (function ($) {
     "use strict";
-
-    
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -63,7 +61,13 @@ TweenMax.staggerFrom("nav", 1, {
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-    
-
 })(jQuery);
+
+$('.js-tilt').tilt({
+    scale: 1.1
+})
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-23581568-13');

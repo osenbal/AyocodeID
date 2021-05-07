@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  background-image: url(../img/BG-transparent.png);
+  background-image: url(../img/BG-transparent-2.png);
   background-position: top right;
   background-repeat: no-repeat;
-  background-size: 70vmax;
-}
-@media screen and (max-width: 992px) {
-  body {
-    background-image: url(../img/BG-transparent-2.png);
-  }
+  background-size: 60vmax;
 }
 
 .custom-nav .navbar-brand img {
@@ -23,14 +18,9 @@ body {
   font-size: 1.4rem;
   margin-left: 0.4em;
 }
-@media screen and (max-width: 360px) {
-  .custom-nav .navbar-brand span {
-    color: #ffffff;
-  }
-}
 .custom-nav #navbarNav .navbar-nav .nav-item .nav-link {
   color: #ffffff;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   margin-left: 2.4em;
 }
@@ -124,7 +114,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   #projects {
-    margin-top: 9em;
+    margin-top: 2em;
   }
 }
 
@@ -134,12 +124,9 @@ body {
 #contact h2 {
   font-weight: 700;
   font-size: 3rem;
-  color: #555555;
+  color: #461890;
   text-transform: uppercase;
   white-space: nowrap;
-}
-#contact svg {
-  background-size: cover;
 }
 
 #footer {
@@ -154,5 +141,5 @@ body {
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }/*# sourceMappingURL=main.css.map */
