@@ -1,15 +1,3 @@
-TweenMax.from(".about", 1, {
-    opacity: 0,
-    y: -40,
-    ease: Power3.easeInOut
-}, 0.08);
-
-TweenMax.staggerFrom("nav", 1, {
-    opacity: 0,
-    x: -40,
-    ease: Power3.easeInOut
-}, 0.08);
-
 
 (function ($) {
     "use strict";
